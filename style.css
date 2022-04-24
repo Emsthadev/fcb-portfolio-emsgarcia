@@ -1,0 +1,98 @@
+/*
+Syntax CSS
+
+Selector {property : value; property : value}
+
+*/
+/* (*) specifies universal selector, 
+we can select all the HTML elements */
+
+*{
+font-family: "Roboto", sans-serif;
+
+}
+
+h1, h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+
+#landing {
+/* vh - view port height - determined percentage of the height of the device
+you are viewing in your webpage "section becomes bigger not padding"*/
+	height: 80vh;
+
+ /* flexbox - display:felx - will allow us to arrange or  
+ layout element inside 
+ landing section vert and horiz*/
+ /* by default, display ; flex arranges elemtns inside 
+ the parent element in a 
+ row */
+ display: flex;
+/*changes the direction of the inside an element with display: flex */
+/* flex direction: column arranges flex items into column */
+ flex-direction: column;
+
+/*arranges elemnts vertivccally if the flex the flext items
+are in a row. however it arranges elements horizontally if the flex
+items are in a column*/
+/*it arrrages all glex items items in to be centered horizontally*/
+ align-items: center;
+
+
+/*justify content - arranges elements horizontally if the flex items are in a 
+row, however, it arranges elements horizontally if the flex items are in a c
+column
+*/
+ /*arranges all flex items in the flex parent to be centered verticall if the 
+ flex items are in a column*/
+ justify-content: center;
+}
+
+#gallery {
+ 
+ height:  75vh;
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+justify-content: center;
+
+
+
+}
+
+ul {
+	list-style: none;
+	padding:    0;
+}
+
+.tools{
+    /*border surrounds the elements in white*/
+	border:  5px solid #f2f2f2;
+	/*outside the element : margin*/
+	margin:  20px;
+	/*inside the element :padding*/
+	padding: 25px;
+    /*adds height on the box*/
+	height: 200px;
+	/* percentage measurement for width is based on the total width
+	of the parent element */
+    width: 75%;
+
+
+
+}
+html {
+	scroll-behavior: smooth;
+}
+
+
+
